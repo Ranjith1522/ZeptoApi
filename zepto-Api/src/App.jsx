@@ -7,16 +7,28 @@ import axios from 'axios'
 function App() {
 
   const [Product, setProduct] = useState([]);
-  const [AddedItems,AddToCart] = useState([]);
+  const [AddedItems,setCart] = useState([]);
   const Products = function () {
     axios.get("https://jsonplaceholder.typicode.com/posts")
       .then((response) => {
         setProduct(response.data);
       })
-  }
+      .catch((error) => {
+        console.log("Error Occurred", error);
+      })
+      }
 
-  const AddedToCart = function () {
+  const AddedToCart = function (item) {
+    console.log("item",item);
     console.log("Added to Cart");
+    axios.post("https://jsonplaceholder.typicode.com/comments",item)
+      .then((response)=>{
+        console.log("Data Submitted",response.data);
+        setCart(response.data);
+      })
+      .catch((error)=>{
+        console.log("Error Occurred",error);
+      })
   }
 
   
@@ -31,7 +43,7 @@ function App() {
           <div className='card' key={data.id}>
             <p>{data.id}</p>
             <p>{data.title}</p>
-            <button>Add to Cart</button>
+            <button onClick={AddedToCart(data.id)}>Add to Cart</button>
           </div>
         ))
       }
