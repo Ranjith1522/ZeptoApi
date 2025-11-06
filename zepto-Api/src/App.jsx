@@ -43,7 +43,7 @@ function App() {
           <div className='card' key={data.id}>
             <p>{data.id}</p>
             <p>{data.title}</p>
-            <button onClick={AddedToCart(data.id)}>Add to Cart</button>
+            <button onClick={() => AddedToCart(data)}>Add to Cart</button>
           </div>
         ))
       }
