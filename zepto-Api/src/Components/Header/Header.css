@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    background-color: coral;
+    
+}
+
+.col-md-8, .col-md-4 {
+  display: flex;
+  align-items: center;
+  gap:45px
+}

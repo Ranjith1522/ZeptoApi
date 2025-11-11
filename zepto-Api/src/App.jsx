@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
+import Header from './Components/Header/Header'
 
 function App() {
 
@@ -34,8 +35,8 @@ function App() {
   
   return (
     <>
-      <h3>Zepto App</h3>
-      <button onClick={Products}>CLick to Fetch</button>
+    <Header/>
+      <button onClick={Products} style={{color:'red'}}>CLick to Fetch</button>
       <div className='main-container'> 
       
        {
