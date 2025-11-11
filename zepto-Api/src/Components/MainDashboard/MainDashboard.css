@@ -1,0 +1,19 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #0b0a0a;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height: 250px;
+  width: 200px;
+  /* padding:1px; */
+  /* margin: 5px; */
+}
