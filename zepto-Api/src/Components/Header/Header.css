@@ -21,3 +21,9 @@
     align-items: center;
     gap: 45px
 }
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

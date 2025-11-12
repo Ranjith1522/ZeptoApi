@@ -17,8 +17,9 @@ function Header() {
                         <div>
                             <p>Electronics</p>
                         </div>
-                        <div>
+                        <div className="search-container">
                             <p>Search</p>
+                            <input type="text" placeholder="Search for products..." />
                         </div>
                     </div>
                     <div className="col-md-4">
