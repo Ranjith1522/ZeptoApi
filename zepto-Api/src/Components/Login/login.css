@@ -1,12 +1,13 @@
 .login-container {
     height: 300px;
-    width: 500px;
+    width: 800px;
     display: flex;
     flex-direction: row;
     gap: 40px;
     border: 1px solid rgb(243, 143, 244);
     border-radius: 5px;
-    margin-left: 450px;
+    margin: 80px auto;
+    align-items: center;
 }
 
 .left-side {
@@ -22,4 +23,28 @@
     width: 150px;
     border-radius: 50%;
     margin-left: 20px;
+}
+
+.user-login {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.user-button {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 10px
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
 }
