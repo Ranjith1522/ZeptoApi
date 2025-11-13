@@ -5,8 +5,11 @@ function Footer() {
     return (
         <>
             <div className="footer">
-                <p>Footer Components</p>
-                <p>About content will appear here</p>
+                <p>About us</p>
+                <p>Contact us</p>
+                <p>Careers</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
             </div>
 
         </>

@@ -6,15 +6,16 @@ import axios from 'axios'
 import Header from './Components/Header/Header'
 import MainDashboard from './Components/MainDashboard/MainDashboard'
 import Footer from './Components/Footer/Footer'
+import Login from './Components/Login/login'  
 
 function App() {
 
   return (
     <>
-      <Header/>
+      {/* <Header/>
       <MainDashboard />
-      <Footer/>
-
+      <Footer/> */}
+      <Login/>
     </>
   )
 }
