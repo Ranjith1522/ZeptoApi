@@ -7,6 +7,7 @@ function Login() {
             <div className="login-container">
                 <div className="input-field">
                     <img src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/13.34.0/tr:w-0.2,ar-0.2-0.2,pr-true,f-auto,q-80//images/logo.svg" alt="Zepto Logo" />
+                    <h4>Lowest Prices Everyday in 10 minutes*</h4>
                     <input type="number" className="username" placeholder="Enter mobile number"/>
                     <button className="username">Continue</button>
                 </div>

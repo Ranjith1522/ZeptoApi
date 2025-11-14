@@ -13,9 +13,9 @@
 .input-field {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     width: 200px;
-    border: rgb(217, 104, 237) 1px solid;
+    border: rgb(236, 182, 246) 1px solid;
 }
 
 .info {
@@ -27,10 +27,12 @@
 .info button {
     margin: 10px;
 }
+
 .info button img {
     width: 150px;
     height: 40px;
 }
+
 .username {
     padding: 10px;
     border-radius: 20px;
