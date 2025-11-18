@@ -1,7 +1,13 @@
 import React from "react";
 import "./Header.css";
+import { useContext } from "react";
+import {LoginContext} from "../contextApi/loginContext";
 
 function Header() {
+
+   const userName =  useContext(LoginContext);
+    const { globalName  } = userName;
+    console.log(globalName);
 
     return (
         <>
@@ -25,6 +31,8 @@ function Header() {
                     <div className="col-md-4">
                         <div>Cart</div>
                         <div>Login</div>
+                        <div>{globalName}</div>
+                       
                     </div>
                 </div>
 

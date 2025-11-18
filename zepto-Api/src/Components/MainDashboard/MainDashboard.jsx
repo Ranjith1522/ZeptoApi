@@ -2,6 +2,7 @@ import React from "react";
 import "./MainDashboard.css";
 import { useState } from "react";
 import axios from "axios";
+import Header from "../Header/Header";
 
 
 function MainDashboard() {
@@ -31,7 +32,7 @@ function MainDashboard() {
     }
     return (
         <>
-            <button onClick={Products} style={{ color: 'red' }}>CLick to Fetch</button>
+            <button onClick={Products} style={{ color: 'red' }}>Click to Fetch</button>
             <div className='main-container'>
                 {
                     Product.map((data) => (
@@ -43,6 +44,7 @@ function MainDashboard() {
                     ))
                 }
             </div>
+           
         </>
     )
 }
