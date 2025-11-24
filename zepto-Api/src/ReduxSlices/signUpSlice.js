@@ -12,11 +12,8 @@ const signUpSlice = createSlice({
     decrement: (state) => {
       state.value -= 1;
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
-    }
   }
 });
 
-export const { increment, decrement, incrementByAmount } = signUpSlice.actions;
+export const { increment, decrement } = signUpSlice.actions;
 export default signUpSlice.reducer;
