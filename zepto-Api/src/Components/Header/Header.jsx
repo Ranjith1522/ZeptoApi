@@ -4,10 +4,11 @@ import { useContext } from "react";
 import {LoginContext} from "../contextApi/loginContext";
 
 function Header() {
-
    const userName =  useContext(LoginContext);
     const { globalName  } = userName;
     console.log(globalName);
+
+    
 
     return (
         <>
