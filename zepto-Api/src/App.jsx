@@ -22,8 +22,8 @@ function App() {
     <LoginContext.Provider value = {{globalName}}>
       <Header/>
       <MainDashboard />
+       <Login/>
       <Footer/>
-      <Login/>
       </LoginContext.Provider>
     </>
   )
